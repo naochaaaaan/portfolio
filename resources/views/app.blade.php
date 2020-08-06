@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Vue Laravel SPA') }}</title>
 
     <!-- Styles -->
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -18,6 +18,6 @@
         <router-view></router-view>
     </div>
 <!-- Scripts -->
-<script src="{{ mix('/js/app.js') }}" defer></script>
+<script src="{{ asset('/js/app.js') }}" defer></script>
 </body>
 </html>
