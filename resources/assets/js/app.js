@@ -4,6 +4,10 @@ import ListComponent from "./components/ListComponent";
 import CreateComponent from "./components/CreateComponent";
 import ShowComponent from "./components/ShowComponent";
 import EditComponent from "./components/EditComponent";
+import IntroductionComponent from "./components/IntroductionComponent.vue";
+import SkillsComponent from "./components/SkillsComponent.vue";
+import AboutThisPageComponent from "./components/AboutThisPageComponent.vue";
+import TopComponent from "./components/TopComponent.vue";
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -41,6 +45,26 @@ const router = new VueRouter({
             name: 'task.edit',
             component: EditComponent,
             props: true
+        },
+        {
+            path: '/introduction',
+            name: 'introduction',
+            component: IntroductionComponent
+        },
+        {
+            path: '/skills',
+            name: 'skills',
+            component: SkillsComponent
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: AboutThisPageComponent
+        },
+        {
+            path: '/',
+            name: 'top',
+            component: TopComponent
         },
     ]
 });
